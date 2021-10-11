@@ -1,0 +1,204 @@
+/* CSS reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    overflow: hidden;
+}
+
+.bg-image{
+    position: absolute;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* container */
+
+.container {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+/* header */
+
+.header .desc-section > h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.header .desc-section > p {
+    color: hsl(303, 10%, 53%);
+}
+
+.reviews-section {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.reviews-section p {
+    color: hsl(300, 43%, 22%);
+}
+
+.review img {
+    margin: 10px 0;
+}
+
+.review {
+    background-color: hsl(300, 24%, 96%);
+    padding: 10px 0px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.header .desc-section > p, .reviews-section {
+    margin-bottom: 40px;
+}
+
+/* coments section */
+
+.coments-section {
+    text-align: left;
+}
+
+.coment {
+    padding: 30px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.profile .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 25px;
+}
+
+.profile .image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.profile {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.profile h3, p{
+    font-size: 14px;
+}
+
+.coment p {
+    color: hsl(300, 24%, 96%);
+}
+
+
+.profile h3 span {
+    display: block;
+    margin-top: 3px;
+    font-weight: normal;
+    color: hsl(333, 80%, 67%);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+        text-align: left;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+    }
+
+    /* header */
+
+    .header, .reviews-section, .review, .coments-section {
+        display: flex;
+    }
+
+    .header .desc-section {
+        margin-right: 100px;
+    }
+
+    .header .desc-section > h1 {
+        font-size: 36px;
+    }
+
+    .header .desc-section > p {
+        font-size: 18px;
+    }
+
+    .reviews-section {
+        flex-direction: column;
+    }
+
+    .review {
+        align-items: center;
+        width: 80%;
+        padding: 10px 20px;
+    }
+
+    .review:nth-child(2){
+        align-self: center;
+    }
+
+    .review:nth-child(3){
+        align-self: flex-end;
+    }
+
+    .review img:last-of-type {
+        margin-right: 20px;
+    }
+
+    /* comment */
+
+    .coments-section {
+        justify-content: space-between;
+        height: 300px;
+    }
+
+    .coment {
+        max-width: 370px;
+        max-height: 225px;
+        margin: 0;
+    }
+
+    .coment:nth-child(2) {
+        align-self: center;
+    }
+
+    .coment:nth-child(3) {
+        align-self: flex-end;
+    }
+
+
+
+}
